@@ -1,0 +1,5 @@
+webcamfacedetection
+logs/train
+logs/validation
+aug_data
+data
