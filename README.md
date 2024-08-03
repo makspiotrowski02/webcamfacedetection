@@ -1,23 +1,22 @@
-# webcamfacedetection
-Deep learning project for live tracking the face using a webcam. It involves transfer learning techniques from the pre-trained VGG16 model. There is both classification and regression used. Classification is used for detecting face presence and regression is used for coordinates of the bounding box. This model was trained on very small range of data, but it can detect other faces with slightly worse performance too.
+# Webcam face detection
+Deep learning project for live tracking the face using a webcam. It involves transfer learning techniques from the pre-trained VGG16 model. There is both classification and regression used. Classification is used for detecting face presence and regression is used for coordinates of the bounding box. This model was trained on a few photos of one person, but it can detect other faces with slightly worse performance too.
 
 
 ## Overview
-Data is collected by a script that takes screenshot from a webcam every 0.5s, then it's augmented to create 60 times more images with different conditions.
+Data is collected by a script that takes screenshot from a webcam every 0.5s, then it's augmented to create 60 times more images to simulate different conditions.
 - Model summary: 
 
     ![Model summary](screenshots/summary.jpg)
-- Loss
+- Loss Graph
 
     ![Loss graph](screenshots/loss.jpg)
 
-- Test on random stock video 
+- Testing the model on a different face.
 
-(https://mixkit.co/free-stock-video/influencer-waves-hello-to-subscribers-on-webcam-15909/)
 
     
 ![Evaluation](screenshots/test.jpg)
-
+Link: https://mixkit.co/free-stock-video/influencer-waves-hello-to-subscribers-on-webcam-15909/
 ## Guide (Windows 11)
 
 First, clone this repository: 
